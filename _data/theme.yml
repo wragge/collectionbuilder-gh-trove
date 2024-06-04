@@ -58,8 +58,7 @@ year-nav-increment: 5 # set increments when auto gen nav years
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "objectid,title,type,date,creator,is_part_of,trove_url,source_url,description,subject,filename,format,pages
-"
+metadata-export-fields: "objectid,parentid,title,type,date,creator,is_part_of,publication_place,trove_url,source_url,abstract,description,subject,extent,format,language,rights,location,latitude,longitude,filename,pages"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,format,is_part_of"
 
@@ -69,12 +68,12 @@ metadata-facets-fields: "subject,creator,format,is_part_of"
 # Ignore this section if you are not including any compound objects
 # Note, like other items, child objects will only appear in visualizations if they have the correct metadata (lat long for map; date for timeline)
 # select true below if you'd like your compound object's child objects to appear in any of the pages or features listed
-map-child-objects: true # true / false - if true, and if child item has latitude and longitude, child objects will be displayed on map
-timeline-child-objects: true # true / false - if true, and if child object has date, child objects will appear as thumbnails on timeline page
+map-child-objects: false # true / false - if true, and if child item has latitude and longitude, child objects will be displayed on map
+timeline-child-objects: false # true / false - if true, and if child object has date, child objects will appear as thumbnails on timeline page
 data-child-objects: false # true / false - if true, child objects will appear linked in table on data page
 carousel-child-objects: false # true / false - if true, child objects will appear on homepage carousel
 browse-child-objects: false # true / false - if true, child objects will appear on browse page and child objects' metadata will populate cloud pages like Subjects page and Locations page, as well as featured terms boxes on the home page
-search-child-objects: true # true / false - if true, child objects will appear on on search page along with parent objects
+search-child-objects: false # true / false - if true, child objects will appear on on search page along with parent objects
 
 ##########
 # ADVANCED OPTIONS
